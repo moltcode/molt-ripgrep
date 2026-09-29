@@ -1,0 +1,33 @@
+{
+  "name": "molt-ripgrep",
+  "version": "15.1.0-1",
+  "description": "ripgrep (rg) for Molt Code: file and content search for the app, and `rg` on every agent's PATH. Official BurntSushi/ripgrep release binaries, unmodified.",
+  "license": "MIT OR Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moltcode/molt-ripgrep"
+  },
+  "files": [
+    "bin",
+    "COPYING",
+    "LICENSE-MIT",
+    "UNLICENSE",
+    "README.md"
+  ],
+  "molt": {
+    "manifestVersion": 1,
+    "displayName": "ripgrep",
+    "kinds": ["cli", "resource"],
+    "platforms": ["darwin-arm64", "darwin-x64", "linux-x64", "linux-arm64", "win32-x64"],
+    "upstream": {
+      "repo": "BurntSushi/ripgrep",
+      "tag": "15.1.0"
+    },
+    "contributes": {
+      "bin": {
+        "rg": "bin/rg${exe}"
+      },
+      "resources": {}
+    }
+  }
+}
